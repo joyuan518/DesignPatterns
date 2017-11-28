@@ -6,5 +6,4 @@ namespace designpatterns.Factory
     {
         void ShowShape();
     }
-
 }
