@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace designpatterns.Singleton
+namespace DesignPatterns.Singleton
 {
     public static class Consumer
     {

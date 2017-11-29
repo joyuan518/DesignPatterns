@@ -1,6 +1,6 @@
 using System;
 
-namespace designpatterns.Factory
+namespace DesignPatterns.Factory
 {
     public class RedRetangle : IShape
     {

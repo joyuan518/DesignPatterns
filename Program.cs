@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace designpatterns
+namespace DesignPatterns
 {
     class Program
     {
