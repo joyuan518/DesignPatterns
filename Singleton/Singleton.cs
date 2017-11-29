@@ -5,7 +5,7 @@ namespace DesignPatterns.Singleton
     public class Singleton
     {
         private volatile static Singleton _instance;
-        private static object _locker = new object();
+        private static readonly object _locker = new object();
 
         private Singleton()
         {

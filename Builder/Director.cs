@@ -4,7 +4,7 @@ namespace DesignPatterns.Builder
 {
     public class Director
     {
-        private Builder _builder;
+        private readonly Builder _builder;
 
         public Director(Builder builder)
         {

@@ -4,7 +4,7 @@ namespace DesignPatterns.Builder
 {
     public abstract class Builder
     {
-        protected Product _product;
+        protected readonly Product _product = new Product();
         public abstract void BuildPartA();
         public abstract void BuildPartB();
         public abstract void BuildPartC();
