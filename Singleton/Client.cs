@@ -6,7 +6,7 @@ using System.Linq.Expressions;
 
 namespace DesignPatterns.Singleton
 {
-    public static class Consumer
+    public static class Client
     {
 
         public static void Run()

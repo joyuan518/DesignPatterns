@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace DesignPatterns.Prototype
 {
-    public static class Consumer
+    public static class Client
     {
         public static void Run()
         {

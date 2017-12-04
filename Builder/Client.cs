@@ -1,6 +1,6 @@
 namespace DesignPatterns.Builder
 {
-    public static class Consumer
+    public static class Client
     {
         public static void Run()
         {

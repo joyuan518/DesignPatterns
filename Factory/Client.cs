@@ -2,7 +2,7 @@ using System;
 
 namespace DesignPatterns.Factory
 {
-    public static class Consumer
+    public static class Client
     {
         private static ShapeCreator GetShapeCreator()
         {

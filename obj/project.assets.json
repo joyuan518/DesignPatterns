@@ -664,30 +664,28 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\John Yuan\\.nuget\\packages\\": {},
+    "C:\\Users\\John.Yuan.BCD-PC-179\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Source Codes\\Net\\My Projects\\DesignPatterns\\designpatterns.csproj",
+      "projectUniqueName": "D:\\My Projects\\DesignPatterns\\designpatterns.csproj",
       "projectName": "designpatterns",
-      "projectPath": "F:\\Source Codes\\Net\\My Projects\\DesignPatterns\\designpatterns.csproj",
-      "packagesPath": "C:\\Users\\John Yuan\\.nuget\\packages\\",
-      "outputPath": "F:\\Source Codes\\Net\\My Projects\\DesignPatterns\\obj\\",
+      "projectPath": "D:\\My Projects\\DesignPatterns\\designpatterns.csproj",
+      "packagesPath": "C:\\Users\\John.Yuan.BCD-PC-179\\.nuget\\packages\\",
+      "outputPath": "D:\\My Projects\\DesignPatterns\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\John Yuan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\John.Yuan.BCD-PC-179\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

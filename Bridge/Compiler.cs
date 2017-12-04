@@ -1,6 +1,6 @@
 namespace DesignPatterns.Bridge
 {
-    public abstract class Compiler
+    public class Compiler
     {
         protected readonly LexicalAnalyzer _lexicalAnalyzer;
         protected readonly SyntaxAnalyzer _syntaxAnalyer;
@@ -18,8 +18,13 @@ namespace DesignPatterns.Bridge
             this._objCodeGenerator = objCodeGenerator;
         }
 
-        public void Compile(string sourceCodeString)
+        public byte[] Compile(string sourceCodeString)
         {
+            var lexicon = this._lexicalAnalyzer.LexicalAnalyze(sourceCodeString);
+            var syntaxTree = this._syntaxAnalyer.SyntaxAnalyze(lexicon);
+            syntaxTree = this._semanticsAnalyer.SemanticsAnalyze(syntaxTree);
+
+            return this._objCodeGenerator.GenerateObjectCode(syntaxTree);
         }
     }
 }
