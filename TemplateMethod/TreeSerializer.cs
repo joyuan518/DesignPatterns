@@ -5,12 +5,30 @@ namespace DesignPatterns.TemplateMethod
 
     public abstract class TreeSerializer
     {
-        public abstract void WriteNodeStart();
-        public abstract void WriteNodeEnd();
+        public abstract void WriteNodeStart(TreeNode treeNode, StreamWriter stream);
+        public abstract void WriteNodeValue(TreeNode treeNode, StreamWriter stream);
+        public abstract void WriteNodeEnd(TreeNode treeNode, StreamWriter stream);
         
-        public string Serialize()
+        public void Serialize(TreeNode treeNode, StreamWriter stream)
         {
-            throw new NotImplementedException();
+            WriteNodeStart(treeNode, stream);
+            WriteNodeValue(treeNode, stream);
+
+            var leftChild = treeNode.LeftChild;
+
+            if (leftChild != null)
+            {
+                Serialize(leftChild, stream);
+            }
+
+            var rightChild = treeNode.RightChild;
+
+            if (rightChild != null)
+            {
+                Serialize(rightChild, stream);
+            }
+
+            WriteNodeEnd(treeNode, stream);
         }
     }
 }
