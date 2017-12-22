@@ -4,6 +4,6 @@ namespace DesignPatterns.Filter
 
     public abstract class Criteria
     {
-        public abstract void Filter(List<Product> products);
+        public abstract bool Meet(Product product);
     }
 }

@@ -5,16 +5,10 @@ namespace DesignPatterns.Filter
 
     public class AndCriteria : Criteria
     {
-        private readonly List<Criteria> criterias;
+        private readonly List<Criteria> _criterias;
 
-        public AndCriteria(List<Criteria> criterias)
-        {
-            this.criterias = criterias;
-        }
+        public AndCriteria(List<Criteria> criterias) => this._criterias = criterias;
 
-        public override void Filter(List<Product> products)
-        {
-            this.criterias.ForEach(c => c.Filter(products));
-        }
+        public override bool Meet(Product product) => this._criterias.All(c => c.Meet(product));
     }
 }
