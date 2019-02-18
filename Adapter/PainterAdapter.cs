@@ -2,7 +2,12 @@ namespace DesignPatterns.Adapter
 {
     public class PainterAdapter : IPainter
     {
-        private readonly Printer _printer = new Printer();
+        private readonly IPrinter _printer;
+
+        public PainterAdapter(IPrinter printer)
+        {
+            this._printer = printer;
+        }
 
         void IPainter.DrawCircle()
         {

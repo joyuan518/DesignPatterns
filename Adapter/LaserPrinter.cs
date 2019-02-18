@@ -9,7 +9,7 @@ namespace DesignPatterns.Adapter
         Square
     }
 
-    public class Printer
+    public class LaserPrinter : IPrinter
     {
         private Shape _shape {get;set;}
 

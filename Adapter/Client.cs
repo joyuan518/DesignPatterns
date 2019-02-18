@@ -11,11 +11,13 @@ namespace DesignPatterns.Adapter
 
         public static void Run()
         {
-            IPainter painter = new ScreenPainter();
-            DrawAllShapes(painter);
+            //The intention of adapter pattern is to make it possible to use underlying providers which 
+            // provide different interfaces through one specific interface 
+            IPainter screenPainter = new ScreenPainter();
+            DrawAllShapes(screenPainter);
 
-            painter = new PainterAdapter();
-            DrawAllShapes(painter);
+            IPainter printerPainter = new PainterAdapter(new LaserPrinter());
+            DrawAllShapes(printerPainter);
         }
     }
 }
