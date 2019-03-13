@@ -6,7 +6,7 @@ namespace DesignPatterns.Decorator
     {
         Route IRouteCalculator.GetShortestRoute(int startPoint, int endPoint)
         {
-            Console.WriteLine($"Calculate the shortest route using Dijkstra algorithm.");
+            Console.WriteLine("Calculate the shortest route using Dijkstra algorithm.");
             return new Route();
         }
     }
